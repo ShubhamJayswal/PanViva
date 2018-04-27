@@ -97,3 +97,10 @@ function searchClick() {
     search(searchCtrl.value);
   }
 }
+ // handling the Enter key.
+ searchCtrl.addEventListener("keyup", function(event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+          document.getElementById("buttonId").click();
+      }
+  });
