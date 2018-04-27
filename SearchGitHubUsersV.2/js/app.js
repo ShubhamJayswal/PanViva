@@ -50,10 +50,11 @@ function printRepoCount() {
         html += '</div><div class="col-sm-4"></div>';
 
       } else {
+        searchResult.innerHTML = "";
         html = '<h1><b>User not found!</b></h1>'
     }
     //set html of result div to show all data on ui
-    searchResult.innerHTML = html;
+    searchMessage.innerHTML = html;
 }
 //Function to query github api with username as input
 function search(username) {
