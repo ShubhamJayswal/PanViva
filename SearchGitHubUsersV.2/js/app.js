@@ -85,7 +85,6 @@ function search(username) {
 
 //function to handle search click
 function searchClick() {
-
     // if the user types in nothing, ask user to type a valid username and show no results.
     if(searchCtrl.value==""){
      searchResult.innerHTML = "No search Results";
@@ -97,4 +96,15 @@ function searchClick() {
     search(searchCtrl.value);
   }
 }
+
+searchCtrl.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("searchBtnId").click();
+  }
+});
+
 
