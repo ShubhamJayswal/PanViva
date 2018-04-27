@@ -35,6 +35,20 @@ h4 {
     background-color: #f6f6f6;
 }
 
+
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+    width: 150px;
+
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+
+
 .navbar {
     margin-bottom: 0;
     background-color: #f4511e;
