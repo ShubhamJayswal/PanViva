@@ -71,7 +71,7 @@ function searchClick() {
     }
 
 }
- 
+//Taking input from the Enter Key 
 searchCtrl.addEventListener("keyup", function(event) {
   // Cancel the default action, if needed
   event.preventDefault();
